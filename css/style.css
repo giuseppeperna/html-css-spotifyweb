@@ -334,7 +334,7 @@ margin-bottom: 10px;
 
 .center-play {
   height: 100%;
-  width:580px;
+  width:35%;
   /* background-color: orange; */
   font-size: 1.3rem;
 }
@@ -394,4 +394,17 @@ margin-bottom: 10px;
 
 .progress-20-per {
   width: 20%;
+}
+
+.progress-40-per {
+  width: 40%;
+}
+
+.player-right > .progress-bar {
+  margin: 0 10px;
+}
+
+.player-right a {
+  margin:0 8px;
+  font-size: 0.9rem;
 }
