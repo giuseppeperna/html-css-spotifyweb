@@ -14,17 +14,39 @@
       <!-- Left-side panel -->
       <nav id="left-side-nav">
         <div class="container-flex flex-column left-nav side-black">
-          <div class="logo container-flex flex-row">
+          <div class="logo padding-left-sidebar container-flex flex-row">
             <a href="#"><img src="img/spotify-logo.png" alt=""></a>
           </div>
-          <ul>
+          <ul class="top-list">
             <li class="container-flex flex-row"><a href="#" class="decoration-none"><img src="img/home.svg" alt="home"><span class="white-text">Home</span></a></li>
             <li class="container-flex flex-row"><a href="#" class="decoration-none"><img src="img/search.svg" alt="home"><span class="grey-text">Cerca</span></a></li>
             <li class="container-flex flex-row"><a href="#" class="decoration-none"><img src="img/libreria.svg" alt="home"><span class="grey-text">La tua libreria</span></a></li>
           </ul>
-          <div class="logo container-flex">
+          <h2 class="white-text padding-left-sidebar margin-bottom-sidebar">PLAYLIST</h2>
+          <div class="playlist padding-left-sidebar container-flex flex-row">
+            <a href="" class="plus-playlist"><span>+</span></a>
+            <a href="" class="decoration-none margin-left-sidebar"><h2 class="grey-text">Crea playlist</h2></a>
           </div>
+          <ul class="bottom-list">
+            <li class="padding-left-sidebar"><a href="" class="grey-text decoration-none">Nome Playlist</a></li>
+            <li class="padding-left-sidebar"><a href="" class="grey-text decoration-none">Nome Playlist</a></li>
+            <li class="padding-left-sidebar"><a href="" class="grey-text decoration-none">Nome Playlist</a></li>
+            <li class="padding-left-sidebar"><a href="" class="grey-text decoration-none">Nome Playlist</a></li>
+            <li class="padding-left-sidebar"><a href="" class="grey-text decoration-none">Nome Playlist</a></li>
+            <li class="padding-left-sidebar"><a href="" class="grey-text decoration-none">Nome Playlist</a></li>
+            <li class="padding-left-sidebar"><a href="" class="grey-text decoration-none">Nome Playlist</a></li>
+          </ul>
+          <div class="user-section container-flex flex-row">
+            <a href="#"><img src="img/download.svg" alt="download"></a>
+            <a href="" class="decoration-none margin-left-sidebar"><h2 class="grey-text">Installa App</h2></a>
+          </div>
+          <div class="profile-section container-flex flex-row">
+            <a href=""><img src="img/profile.svg" alt="profile"></a>
+            <a href="#" class="white-text decoration-none margin-left-sidebar"><h2>John Doe</h2></a>
+          </div>
+
         </div>
+
       </nav>
 
       <section id="main-contents">
@@ -37,7 +59,7 @@
           </div>
           <div class="categories container-flex flex-row">
             <ul class="container-flex flex-row">
-              <a href="#" class="grey-text"><li class="selected-category">IN EVIDENZA</li></a>
+              <a href="#" class="grey-text selected-category"><div class="active"></div><li><span>IN EVIDENZA</span></li></a>
               <a href="#" class="grey-text"><li>PODCAST</li></a>
               <a href="#" class="grey-text"><li>CLASSIFICHE</li></a>
               <a href="#" class="grey-text"><li>GENERI E MOOD</li></a>
@@ -116,6 +138,37 @@
         <!-- Bottom bar Section -->
       <nav id="nav-bottom">
         <div class="container-flex flex-row now-playing footer-black">
+          <div class="side-play player-left container-flex flex-row">
+            <img src="img/sinister.jpeg" alt="now playing">
+            <div class="">
+              <h3 class="white-text">Sinister</h3>
+              <p class="player-grey-text">Nome Brano</p>
+            </div>
+            <div class="">
+              <a href=""><i class="fa fa-heart-o player-grey-text" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-folder-o player-grey-text" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="center-play container-flex flex-column">
+            <div class="player-buttons container-flex flex-row">
+              <button type="button" name="button"><i class="fa fa-random white-text" aria-hidden="true"></i></button>
+              <button type="button" name="button"><i class="fa fa-step-backward white-text" aria-hidden="true"></i></button>
+              <button type="button" name="button"><i class="fa fa-play-circle-o white-text" aria-hidden="true"></i></button>
+              <button type="button" name="button"><i class="fa fa-step-forward white-text" aria-hidden="true"></i></button>
+              <button type="button" name="button"><i class="fa fa-repeat white-text" aria-hidden="true"></i></button>
+            </div>
+            <div class="music-progress-bar container-flex flex-row">
+              <span class="white-text">0:25</span>
+              <div class="progress-bar">
+                <span class="progress-bar-elapsed progress-20-per"></span>
+              </div>
+              <span class="white-text">4:35</span>
+            </div>
+
+          </div>
+
+
+          <div class="side-play"></div>
         </div>
       </nav>
     </main>
