@@ -7,7 +7,7 @@
 /* COMMON */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sora', 'Montserrat', sans-serif;
   font-size: 10px;
 }
 
@@ -105,7 +105,7 @@ list-style: none;
 }
 
 .logo img {
-  height: 39px;
+  width: 130px;
 }
 
 /* MAIN SECTION */
@@ -148,13 +148,18 @@ list-style: none;
 
 .categories {
   width:100%;
-  margin: 80px 0 40px 0;
+  margin: 80px 0 30px 0;
   justify-content: center;
+}
+
+.selected-category {
+  border-bottom: 2px solid #adff2f;
+  border-spacing: 5px;
 }
 
 .categories ul li {
   display: inline-block;
-  margin: 0 30px;
+  margin: 0 20px;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -172,39 +177,40 @@ list-style: none;
 }
 
 .title-section {
-font-weight: 700;
+font-weight: 800;
 text-align: left;
 font-size: 1.6rem;
-margin-left: 12px;
+margin-left: 5px;
+margin-bottom: 10px;
+}
+
+.title-description {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 15px 5px;
 }
 
 .album-container {
   justify-content:flex-start;
-  margin: 25px 0;
+  margin: 0px 0;
   flex-wrap: wrap;
 }
 
-[src*="img/"] {
+.album-box > a > img {
   width: 95%;
   margin-bottom: 10px;
   box-shadow: 1px 1px 7px 5px rgba(0,0,0,0.2);
-  display: inline;
 }
 
-.play-icon img {
-  width: 55px;
-  position: absolute;
-  top:55%;
-  left:55%;
-  transform: translate(-50%, -50%);
-  filter:drop-shadow(5px 5px 5px #252525);
+.album-box > a > img[src*="img/youg.jpeg"], .album-box > a > img[src*="img/einaudi.jpeg"]  {
+  border-radius: 50%;
 }
-
 
 .album-box {
   width:calc(100% / 6);
   text-align: center;
   position: relative;
+  margin-top:25px
 }
 
 .play-icon:hover {
@@ -214,13 +220,14 @@ margin-left: 12px;
 }
 
 .album-title {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 7px 0;
 }
 
 .album-description {
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* BOTTOM NAV */
