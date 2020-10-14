@@ -543,6 +543,10 @@ margin-bottom: 10px;
   .album-description {
     font-size: 0.7rem;
   }
+
+  .overlay i {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width:768px) {
