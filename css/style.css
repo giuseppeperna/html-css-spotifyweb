@@ -206,22 +206,23 @@ margin-bottom: 35px;
 }
 
 .upgrade-bar {
-  width: 100%;
+  width: calc(100% - 232px);
   height: 100px;
   position: fixed;
   z-index: 1;
   background-color: rgba(4,4,4,0.5);
   overflow: hidden;
+  justify-content:flex-end;
+  align-items: center;
 }
 
-.upgrade-bar:hover a {
-  height: 50px;
-  width: 260px;
+.upgrade-CTA:hover {
+  transform: scale(1.1);
 }
 
-.upgrade-bar:hover span {
+/* .upgrade-bar:hover span {
   font-size: 0.9rem;
-}
+} */
 
 .upgrade-bar a {
   width:240px;
@@ -229,9 +230,10 @@ margin-bottom: 35px;
   border-radius: 30px;
   border: 1px solid #fff;
   position: absolute;
-  top:50%;
-  right:260px;
-  transform:translate(0, -50%);
+  right:30px;
+  /* top:50%;
+  right:0;
+  transform:translate(0, -50%); */
 }
 
 .upgrade-bar span {
@@ -553,6 +555,42 @@ margin-bottom: 10px;
   .album-box {
     width:calc(100% / 2);
   }
+
+  .categories ul li {
+    font-size:0.75rem;
+    margin:0 10px 5px 10px;
+  }
+
+  .title-section {
+    font-size: 1.3rem;
+  }
+
+  .album-title {
+    font-size: 0.8rem;
+  }
+
+  .album-description {
+    font-size: 0.6rem;
+  }
+
+  .overlay i {
+    font-size: 4rem;
+  }
+
+  .center-play {
+    width:30%;
+  }
+
+  .side-play {
+    width:200px;
+  }
+
+  .player-buttons i {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (min-width:360px) and (max-width:767px) {
 
   .categories ul li {
     font-size:0.75rem;
