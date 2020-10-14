@@ -391,7 +391,6 @@ margin-bottom: 10px;
   height: 100%;
   width:232px;
   min-width: 120px;
-  /* background-color: chartreuse; */
   align-items: center;
   justify-content:space-around;
 }
@@ -420,7 +419,6 @@ margin-bottom: 10px;
 .center-play {
   height: 100%;
   width:35%;
-  /* background-color: orange; */
   font-size: 1.3rem;
 }
 
@@ -527,7 +525,7 @@ margin-bottom: 10px;
 }
 
 
-
+/* MEDIUM SIZE DESKTOP */
 @media screen and (min-width:769px) and (max-width:992px) {
   .album-box {
     width:calc(100% / 4);
@@ -554,7 +552,7 @@ margin-bottom: 10px;
     font-size: 4rem;
   }
 }
-
+/* SMALL */
 @media screen and (max-width:768px) {
   .album-box {
     width:calc(100% / 2);
@@ -593,8 +591,8 @@ margin-bottom: 10px;
     margin: 0 10px;
   }
 }
-
-@media screen and (min-width:360px) and (max-width:767px) {
+/* EXTRA SMALL */
+@media screen and (min-width:100px) and (max-width:767px) {
 
   .left-nav {
     width:40px;
@@ -716,5 +714,16 @@ margin-bottom: 10px;
 
   .player-buttons :nth-child(3) i {
     margin: 0 8px;
+  }
+}
+/* MOBILE  */
+@media screen and (max-width:419px) {
+
+  .mobile-display-none {
+    display: none;
+  }
+
+  .player-left a > p, .player-left h3 {
+    margin: 0 18px 0 10px;
   }
 }
