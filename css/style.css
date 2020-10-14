@@ -550,5 +550,40 @@ margin-bottom: 10px;
 }
 
 @media screen and (max-width:768px) {
+  .album-box {
+    width:calc(100% / 2);
+  }
 
+  .categories ul li {
+    font-size:0.75rem;
+    margin:0 10px 5px 10px;
+  }
+
+  .title-section {
+    font-size: 1.3rem;
+  }
+
+  .album-title {
+    font-size: 0.8rem;
+  }
+
+  .album-description {
+    font-size: 0.6rem;
+  }
+
+  .overlay i {
+    font-size: 4rem;
+  }
+
+  .center-play {
+    width:30%;
+  }
+
+  .side-play {
+    width:200px;
+  }
+
+  .player-buttons i {
+    margin: 0 10px;
+  }
 }
