@@ -115,7 +115,7 @@ margin-bottom: 35px;
 }
 
 .bottom-list li :hover, .playlist h2:hover, .user-section h2:hover,
-.player-left i:hover, .player-left a > p:hover  {
+.player-left i:hover  {
   color:#fff;
 }
 
@@ -247,13 +247,17 @@ margin-bottom: 35px;
 
 .categories {
   width:100%;
-  margin: 80px 0 30px 0;
+  margin-top: 80px;
   justify-content: center;
 }
 
 .categories a > li :hover{
   color:#a3a3a3;
-  margin-bottom: 50px;
+}
+
+.categories  a {
+  margin-bottom:30px;
+
 }
 
 .selected-category {
@@ -279,8 +283,9 @@ margin-bottom: 35px;
 
 .categories ul {
   margin-top: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .catergory-row {
@@ -379,6 +384,7 @@ margin-bottom: 10px;
 .side-play {
   height: 100%;
   width:232px;
+  min-width: 120px;
   /* background-color: chartreuse; */
   align-items: center;
   justify-content:space-around;
@@ -398,6 +404,11 @@ margin-bottom: 10px;
 .player-left a > p {
   font-size: 0.7rem;
   margin-right: 10px;
+}
+
+.player-left a > p:hover {
+  color:#fff;
+  text-decoration: underline;
 }
 
 .center-play {
@@ -507,4 +518,33 @@ margin-bottom: 10px;
 .player-right a {
   margin:0 8px;
   font-size: 0.9rem;
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+  .album-box {
+    width:calc(100% / 4);
+  }
+
+  .categories ul li {
+    font-size:0.75rem;
+    margin:0 10px 5px 10px;
+  }
+
+  .title-section {
+    font-size: 1.4rem;
+  }
+
+  .album-title {
+    font-size: 0.9rem;
+  }
+
+  .album-description {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+
 }
