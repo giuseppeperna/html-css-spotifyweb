@@ -98,8 +98,17 @@ list-style: none;
 margin-bottom: 35px;
 }
 
+.top-list img {
+  filter: opacity(0.8);
+}
+
 .top-list > li:first-child {
   border-left: 3px solid #adff2f;
+  filter: opacity(0.8);
+}
+
+#start-highlight:hover #highlight{
+  filter: opacity(1);
 }
 
 .left-nav li i {
@@ -113,18 +122,26 @@ margin-bottom: 35px;
   vertical-align:bottom;
 }
 
+.top-list li > a > img[src="img/home.svg"] {
+  margin: 0 13px;
+}
+
 .left-nav span, .bottom-list a {
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-.bottom-list li :hover, .playlist h2:hover, .user-section h2:hover,
+.bottom-list li :hover, .user-section h2:hover,
 .player-left i:hover  {
   color:#fff;
 }
 
-.plus-playlist:hover {
+#playlist:hover >  #new-playlist{
   background-color: #fff;
+}
+
+#playlist:hover >  #create-playlist h2{
+  color: #fff;
 }
 
 .top-list:not([src="img/home.svg"]) :hover {
@@ -338,10 +355,9 @@ margin-bottom: 10px;
   filter: drop-shadow(6px 6px 8px black);
 }
 
-.overlay:hover {
+#container-music:hover #play-song {
   opacity: 1;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .cover {
@@ -399,6 +415,7 @@ margin-bottom: 10px;
   width:45px;
   height: 45px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .player-left i {
@@ -468,11 +485,11 @@ margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   margin: 0 25px 10px 25px;
+  cursor: pointer;
 }
 
-.progress-bar-elapsed:hover {
-  background: #adff2f;
-  cursor: pointer;
+#music-bar:hover #music-progress {
+  opacity: 1;
 }
 
 .progress-bar-elapsed-circle {
