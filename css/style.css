@@ -43,6 +43,12 @@ body {
   margin-left: 10px;
 }
 
+#wrapper {
+  width:100%;
+  height: 100vh;
+  overflow:hidden;
+}
+
 /* COLOURS */
 
 .side-black {
@@ -137,6 +143,8 @@ margin-bottom: 35px;
 .bottom-list {
   margin-top:20px;
   flex-basis:640px;
+  overflow-y:auto;
+  min-height: 70px;
 }
 
 .user-section img {
@@ -245,6 +253,7 @@ margin-bottom: 35px;
 .categories ul {
   margin-top: 50px;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
 .catergory-row {
@@ -307,6 +316,9 @@ margin-bottom: 10px;
   width:100%;
   height: 90px;
   justify-content: space-between;
+  position:fixed;
+  bottom:0;
+  z-index:2;
 }
 
 .side-play {
@@ -381,6 +393,34 @@ margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   margin: 0 25px 10px 25px;
+}
+
+.progress-bar-elapsed:hover {
+  background: #adff2f;
+  cursor: pointer;
+}
+
+.progress-bar-elapsed-circle {
+  width: 100%;
+  height:100%;
+  border-radius: 4px;
+  background: #adff2f;
+  opacity: 0;
+}
+
+.circle-player {
+  position:absolute;
+  left:100%;
+  bottom:calc(50% - 7px);
+  border-radius: 50%;
+  height: 14px;
+  width:14px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.progress-bar-elapsed-circle:hover {
+  opacity: 1
 }
 
 .progress-bar-elapsed {
