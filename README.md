@@ -2,6 +2,10 @@
 
 <img src="screens/spotify-lg.PNG">
 
-<img src="screens/spotify-md.PNG">
+<p align="center">
+<img src="screens/spotify-md.PNG" text-align="center"> 
+</p>
 
+<p align="center">
 <img src="screens/spotify-xs.PNG">
+</p>
