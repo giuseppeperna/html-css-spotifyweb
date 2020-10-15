@@ -27,6 +27,14 @@ body {
   flex-direction: row;
 }
 
+.center-items {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .decoration-none {
   text-decoration: none;
 }
@@ -94,7 +102,6 @@ body {
 
 .top-list {
 padding: 0 8px;
-list-style: none;
 margin-bottom: 35px;
 }
 
@@ -136,11 +143,11 @@ margin-bottom: 35px;
   color:#fff;
 }
 
-#playlist:hover >  #new-playlist{
+#playlist-section:hover >  #new-playlist{
   background-color: #fff;
 }
 
-#playlist:hover >  #create-playlist h2{
+#playlist-section:hover >  #create-playlist h2{
   color: #fff;
 }
 
@@ -170,10 +177,6 @@ margin-bottom: 35px;
   color:black;
 }
 
-.playlist {
-  align-items: center;
-}
-
 .bottom-list {
   margin-top:20px;
   flex-basis:640px;
@@ -188,17 +191,12 @@ margin-bottom: 35px;
 
 .user-section {
   border-bottom: 1px solid grey;
-  width:85%;
-  margin:5px auto;
   padding-bottom: 5px;
-  font-size: 0.6rem;
-  align-items: center;
 }
 
-.profile-section {
+.profile-section, .user-section {
   width: 85%;
   margin: 5px auto;
-  align-items: center;
   font-size: 0.6rem;
 }
 
@@ -235,7 +233,6 @@ margin-bottom: 35px;
   background-color: rgba(4,4,4,0.5);
   overflow: hidden;
   justify-content:flex-end;
-  align-items: center;
 }
 
 .upgrade-CTA:hover {
@@ -265,7 +262,6 @@ margin-bottom: 35px;
 .categories {
   width:100%;
   margin-top: 70px;
-  justify-content: center;
 }
 
 .categories a > li :hover{
@@ -302,7 +298,6 @@ margin-bottom: 35px;
   margin-top: 50px;
   margin-bottom: 5px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .catergory-row {
@@ -408,7 +403,6 @@ margin-bottom: 10px;
   height: 100%;
   width:232px;
   min-width: 170px;
-  align-items: center;
   justify-content:space-around;
 }
 
@@ -442,8 +436,6 @@ margin-bottom: 10px;
 }
 
 .player-buttons {
-  align-items: center;
-  justify-content: center;
   margin-top: 15px;
 }
 
@@ -470,8 +462,6 @@ margin-bottom: 10px;
 .music-progress-bar {
   width:100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -615,11 +605,14 @@ margin-bottom: 10px;
 /* EXTRA SMALL */
 @media screen and (min-width:50px) and (max-width:767px) {
 
+  .xs-justify-center {
+    justify-content: center;
+  }
+
   .left-nav {
     width:40px;
     min-height: 400px;
     padding-top: 0;
-    justify-content: center;
   }
 
   .main-section {
@@ -632,10 +625,6 @@ margin-bottom: 10px;
 
   .xs-display-none {
     display: none;
-  }
-
-  .logo {
-    justify-content: center;
   }
 
   .logo > [src="img/logo-small.svg"]{
@@ -664,13 +653,10 @@ margin-bottom: 10px;
 
   .user-section {
     border-bottom:none;
-    width:100%;
-    justify-content: center;
   }
 
-  .profile-section {
+  .profile-section, .user-section {
     width: 100%;
-    justify-content: center;
   }
 
   .upgrade-bar a {
