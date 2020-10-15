@@ -21,9 +21,9 @@
               <img src="img/spotify-logo.png" class="xs-display-none" alt="logo spotify">
             </div>
             <ul class="top-list">
-              <li class="container-flex flex-row"><a href="#" id="start-highlight" class="decoration-none"><img src="img/home.svg" id="highlight" alt="home"><span class="white-text xs-display-none">Home</span></a></li>
-              <li class="container-flex flex-row"><a href="#" id="start-highlight" class="decoration-none"><img src="img/search.svg" id="highlight" alt="Cerca"><span class="grey-text xs-display-none">Cerca</span></a></li>
-              <li class="container-flex flex-row"><a href="#" id="start-highlight" class="decoration-none"><img src="img/libreria.svg" id="highlight" alt="Libreria"><span class="grey-text xs-display-none">La tua libreria</span></a></li>
+              <li class="container-flex flex-row"><a href="#" id="start-highlight-home" class="decoration-none"><img src="img/home.svg" id="highlight-home" alt="home"><span class="white-text xs-display-none">Home</span></a></li>
+              <li class="container-flex flex-row"><a href="#" id="start-highlight-search" class="decoration-none"><img src="img/search.svg" id="highlight-search" alt="Cerca"><span class="grey-text xs-display-none">Cerca</span></a></li>
+              <li class="container-flex flex-row"><a href="#" id="start-highlight-libreria" class="decoration-none"><img src="img/libreria.svg" id="highlight-libreria" alt="Libreria"><span class="grey-text xs-display-none">La tua libreria</span></a></li>
             </ul>
             <h2 class="white-text padding-left-sidebar margin-bottom-sidebar xs-display-none">PLAYLIST</h2>
             <div id="playlist-section" class="playlist padding-left-sidebar container-flex flex-row center-items">
@@ -70,9 +70,9 @@
             <div class="catergory-row">
               <h1 class="title-section white-text">Recently played</h1>
               <div class="album-container container-flex flex-row">
-                <div id="container-music" class="album-box">
+                <div id="container-music-recent-first" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-recent-first" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
@@ -80,9 +80,9 @@
                   <h4 class="white-text album-title">Heavy Metal</h4>
                   <p class="grey-text album-description">Subtitle</p>
                 </div>
-                <div id="container-music" class="album-box">
+                <div id="container-music-recent-second" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-recent-second" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/stranger.jpeg" alt="stranger"></a>
@@ -90,9 +90,9 @@
                   <h4 class="white-text album-title"> Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
                   <p class="grey-text album-description">Kyle Dixon & Michael Stein</p>
                 </div>
-                <div id="container-music" class="album-box">
+                <div id="container-music-recent-third" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-recent-third" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/aquietplace.jpeg" alt="quiet"></a>
@@ -100,9 +100,9 @@
                   <h4 class="white-text album-title">A quiet place</h4>
                   <p class="grey-text album-description">Subtitle</p>
                 </div>
-                <div id="container-music" class="album-box">
+                <div id="container-music-recent-fourth" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-recent-fourth" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/split.jpeg" alt=""></a>
@@ -110,9 +110,9 @@
                   <h4 class="white-text album-title">Split</h4>
                   <p class="grey-text album-description">Subtitle</p>
                 </div>
-                <div id="container-music" class="album-box">
+                <div id="container-music-recent-fifth" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-recent-fifth" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/cure.jpeg" alt=""></a>
@@ -120,9 +120,9 @@
                   <h4 class="white-text album-title">A cure for wellness</h4>
                   <p class="grey-text album-description">Subtitle</p>
                 </div>
-                <div id="container-music" class="album-box">
+                <div id="container-music-recent-sixth" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-recent-sixth" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/sinister.jpeg" alt=""></a>
@@ -136,18 +136,18 @@
               <h1 class="title-section white-text">Creato per John Doe</h1>
               <p class="grey-text title-description">Più ascolti, più accurati saranno i suggerimenti.</p>
               <div class="album-container container-flex flex-row">
-                <div id="container-music" class="album-box">
+                <div id="container-music-created-first" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-created-first" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/radar.jpeg" alt="radar"></a>
                   </div>
                   <h4 class="white-text album-title">Release Radar</h4>
                 </div>
-                <div id="container-music" class="album-box">
+                <div id="container-music-created-second" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay">
+                    <div id="play-song-created-second" class="overlay">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/mixdaily.jpeg" alt=""></a>
@@ -160,18 +160,18 @@
               <h1 class="title-section white-text">Artisti più popolari</h1>
               <p class="grey-text title-description">Più ascolti, più accurati saranno i suggerimenti.</p>
               <div class="album-container container-flex flex-row">
-                <div id="container-music" class="album-box">
+                <div id="container-music-artists-first" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay overlay-circle">
+                    <div id="play-song-artists-first" class="overlay overlay-circle">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/youg.jpeg" alt="young"></a>
                   </div>
                   <h4 class="white-text album-title">Lana Del Rey</h4>
                 </div>
-                <div id="container-music" class="album-box">
+                <div id="container-music-artists-second" class="album-box">
                   <div class="cover">
-                    <div id="play-song" class="overlay overlay-circle">
+                    <div id="play-song-artists-second" class="overlay overlay-circle">
                       <i class="fa fa-play-circle-o white-text" aria-hidden="true"></i>
                     </div>
                     <a href="#"><img src="img/einaudi.jpeg" alt="einaudi"></a>
@@ -182,7 +182,7 @@
             </div>
           </div>
         </section>
-          <!-- Bottom bar Section -->
+        <!-- Bottom bar Section -->
         <nav id="nav-bottom">
           <div class="container-flex flex-row now-playing footer-black">
             <div class="side-play player-left container-flex flex-row center-items">
@@ -207,11 +207,11 @@
               <div id="music-bar" class="music-progress-bar container-flex flex-row center-items justify-center">
                 <span class="white-text">0:25</span>
                 <div  class="progress-bar">
-                  <span class="progress-bar-elapsed progress-20-per">
+                  <div class="progress-bar-elapsed progress-20-per">
                     <div id="music-progress" class="progress-bar-elapsed-circle">
                       <div class="circle-player"></div>
                     </div>
-                  </span>
+                  </div>
                 </div>
                 <span class="white-text">4:35</span>
               </div>
@@ -220,12 +220,12 @@
               <a href="#"><i class="fa fa-list-ul white-text mobile-display-none"></i></a>
               <a href="#"><i class="fa fa-desktop white-text mobile-display-none"></i></a>
               <a href="#"><i class="fa fa-volume-up white-text" aria-hidden="true"></i></a>
-              <div id="music-bar" class="progress-bar">
-                <span class="progress-bar-elapsed progress-40-per">
-                  <div id="music-progress" class="progress-bar-elapsed-circle">
+              <div id="volume-bar" class="progress-bar">
+                <div class="progress-bar-elapsed progress-40-per">
+                  <div id="volume-level" class="progress-bar-elapsed-circle">
                     <div class="circle-player"></div>
                   </div>
-                </span>
+                </div>
               </div>
             </div>
           </div>
