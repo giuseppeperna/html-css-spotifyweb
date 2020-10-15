@@ -179,6 +179,7 @@ margin-bottom: 35px;
   flex-basis:640px;
   overflow-y:auto;
   min-height: 70px;
+  scrollbar-color:black black;
 }
 
 .user-section img {
