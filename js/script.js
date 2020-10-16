@@ -1,1 +1,1 @@
-document.getElementById('title-section').innerHTML= 'Riprodotti di recente';
+document.getElementById('title-section').innerHTML= 'Riprodotto di recente';
